@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "Thimpson Drivers",
+    "slug": "thimpson-express-drivers",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": false,
+    "platforms": ["ios", "android", "web"],
+    "web": { "bundler": "metro" },
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.thimpson.express.drivers"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#000000"
+      },
+      "package": "com.thimpson.express.drivers"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Thimpson Drivers necesita tu ubicación para recibir asignaciones cercanas y navegar a los destinos.",
+          "locationAlwaysPermission": "Thimpson Drivers necesita acceso continuo a tu ubicación para notificarte de nuevas asignaciones cercanas."
+        }
+      ],
+      "expo-font"
+    ],
+    "extra": {
+      "supabaseUrl": "https://osofadrsdjsusjbtuavs.supabase.co",
+      "supabaseAnonKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9zb2ZhZHJzZGpzdXNqYnR1YXZzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODEyOTMyMDgsImV4cCI6MjA5Njg2OTIwOH0.XVuMunOIp7zgst4aJfS7u4VzunOYOWvUTP5htBUqXZo",
+      "apiUrl": "http://192.168.0.100:3000"
+    }
+  }
+}
